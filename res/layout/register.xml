@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fe3ff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text=" Register"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/nameLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/registerText"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="15dip"
+        android:text="Full Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/nameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameLable"
+        android:layout_below="@+id/nameLable"
+        android:ems="12"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/emailLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameValue"
+        android:layout_below="@+id/nameValue"
+        android:text="Email Address"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/emailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailLable"
+        android:layout_below="@+id/emailLable"
+        android:ems="12"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/passwordLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailValue"
+        android:layout_below="@+id/emailValue"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/passwordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordLable"
+        android:layout_below="@+id/passwordLable"
+        android:ems="12"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/confirmPasswordLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordValue"
+        android:layout_below="@+id/passwordValue"
+        android:text="Confirm Password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/confirmPasswordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmPasswordLable"
+        android:layout_below="@+id/confirmPasswordLable"
+        android:ems="12"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/confirmPasswordValue"
+        android:layout_below="@+id/confirmPasswordValue"
+        android:layout_marginTop="20dip"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/registerButton"
+        android:layout_alignBottom="@+id/registerButton"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/registerButton"
+        android:text="Cancel" />
+
+</RelativeLayout>
